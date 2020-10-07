@@ -2,10 +2,12 @@ import turtle
 screen = turtle.Screen()
 t = turtle.Turtle()
 t.shape("turtle")
-def draw_square(lenght: int):
+
+def draw_square(length: int):
     for i in range(4):
-        t.forward(lenght)
+        t.forward(length)
         t.right(90)
+
 def exercise_3():
     draw_square(100)
     t.up()
@@ -13,4 +15,5 @@ def exercise_3():
     t.down()
     draw_square(100)
     screen.exitonclick()
+
 exercise_3()
